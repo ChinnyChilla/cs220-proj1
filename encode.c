@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		key++;
 	}
 	currentIndex = 0;
-	int maxIndex = 93;
+	int maxIndex = 94;
 	int offset = 33;
 	while (nextChar != EOF)
 	{
