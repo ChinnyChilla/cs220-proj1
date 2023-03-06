@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 	{
 		if ((int)nextChar >= 33 && (int)nextChar <= 126) {
 
-			int currentOffset = ((int)nextChar) - whatToShiftBy - currentIndex;
+			long currentOffset = nextChar - whatToShiftBy - currentIndex;
 			while (currentOffset < offset) {
 				currentOffset += maxIndex;
 			}

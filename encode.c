@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 	while (nextChar != EOF)
 	{
 		if ((int) nextChar >=33 && (int) nextChar <=126) {
-			int test = ((int)nextChar) - offset + whatToShiftBy + currentIndex;
+			long test = ((int)nextChar) - offset + whatToShiftBy + currentIndex;
 			printf("%c", (char)(test % maxIndex + offset));
 		} else {
 			printf("%c", nextChar);
